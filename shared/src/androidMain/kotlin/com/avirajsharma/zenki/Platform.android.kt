@@ -7,3 +7,9 @@ class AndroidPlatform : Platform {
 }
 
 actual fun getPlatform(): Platform = AndroidPlatform()
+
+actual object AppConfig {
+    actual val groqApiKey: String = BuildKonfig.GROQ_API_KEY
+}
+
+actual fun currentTimeMillis(): Long = System.currentTimeMillis()

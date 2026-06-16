@@ -5,3 +5,9 @@ interface Platform {
 }
 
 expect fun getPlatform(): Platform
+
+expect object AppConfig {
+    val groqApiKey: String
+}
+
+expect fun currentTimeMillis(): Long
